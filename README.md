@@ -16,49 +16,44 @@ Be sure to replace <branch_name> by the name of your branch. And to run it in th
 
 ### How to structure the directory
 ```
-project
-│   README.md
-│   requirements.txt
-│   LICENSE
-│   .gitignore
-│   ...  
-│
-└───data_flow
+.
++---README.md
++---requirements.txt
++---LICENSE
++---.gitignore
++---...  
+|
++---data_flow
+│   +---for_pico
+│   |   +---modules
+|   |   |   +---__init__.py
+│   |   │   +---module001.py
+│   |   │   +---module002.py
+│   |   │   +---...
+│   |   │
+│   |   +---__init__.py
+│   |   +---main.py
 │   │
-│   └───for_pico
-│       │   
-│       └───modules
-|       |   │   __init__.py
-│       │   │   module001.py
-│       │   │   module002.py
-│       │   │   ...
+│   +---for_esp32
+│       +---modules
+|       |   +---module001.ino
+│       │   +---module002.ino
+│       │   +---...
 │       │
-│       |   __init__.py
-│       │   main.py
-│       │
-│   └───for_esp32
-│       │
-│       └───modules
-|       |   │   module001.ino
-│       │   │   module002.ino
-│       │   │   ...
-│       │
-│       │   main.ino
+│       +---main.ino
 │
-└───examples_of_use
-│   │
-│   └───for_pico
++---examples_of_use
+│   +---for_pico
+│       +---modules
+|       |   +---__init__.py
+│       │   +---module001.py
+│       │   +---module002.py
+│       │   +---...
 │       │
-│       └───modules
-|       |   │   __init__.py
-│       │   │   module001.py
-│       │   │   module002.py
-│       │   │   ...
+│       +---__init__.py
+│       +---main.py
 │       │
-│       |   __init__.py
-│       │   main.py
-│       │
-│   ...
++---...
 ```
 
 Please, be sure to follow this structure. It will be easier for us to find your code. And be sure to make a branch for each part (ex: data_flow, examples_of_use, ...) and to push your code in the right branch.
