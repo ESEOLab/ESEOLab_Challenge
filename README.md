@@ -15,8 +15,7 @@ git checkout -b <branch_name>
 Be sure to replace <branch_name> by the name of your branch. And to run it in the root of the repository (where you can find the .git directory).
 
 ### How to structure the directory
-```
-.
+```project
 +---README.md
 +---requirements.txt
 +---LICENSE
