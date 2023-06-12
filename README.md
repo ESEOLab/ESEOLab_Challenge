@@ -81,12 +81,9 @@ class ExampleClass():
 
     def example_method(self):
         ...
-    
-# Define the example function
-def example_function():
-    ...
+ 
 
-# Run the example function if the file is executed
+# Run if the file is executed
 if __name__ == "__main__":
-    example_function()
+    ...
 ```
